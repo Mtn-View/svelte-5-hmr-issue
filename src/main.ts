@@ -35,6 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   stateRouter.evaluateCurrentRoute("app");
 });
 
-stateRouter.on("stateChangeError", (err) => {
+stateRouter.on("stateChangeError", (err: any) => {
   alert(err.message);
 });
